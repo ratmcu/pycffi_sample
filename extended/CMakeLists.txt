@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8.8)
+project(LIB_EXAMPLE)
+set(CMAKE_C_COMPILER gcc)
+link_directories(../sample)
+add_library(extended SHARED extended.c)
+target_link_libraries(extended sample)
