@@ -1,4 +1,4 @@
-from py_build import ffibuilder
+from sample_build import ffibuilder
 
 
 if __name__ == "__main__":

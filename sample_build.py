@@ -18,7 +18,8 @@ ffibuilder.set_source("_sample_cffi",
 """
      #include "sample.h"   // the C header of the library
 """,
-     library_dirs=['./'],
+     library_dirs=['./sample'],
+     include_dirs=['./sample'],
      libraries=['sample'],
      extra_link_args=['-Wl,-rpath=' + os.path.abspath('./')])   # library name, for the linker
 
