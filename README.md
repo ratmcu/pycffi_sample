@@ -12,7 +12,7 @@ how to use a c/c++ shared library with in python using cffi
 
 ## building c backend
 
-`python py_build.py` 
+`python main_builder.py` 
 
 ## testing
 
