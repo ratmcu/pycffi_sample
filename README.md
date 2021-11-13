@@ -4,6 +4,8 @@ how to use a c/c++ shared library with in python using cffi
 
 ## building c library
 
+`cmake .`
+
 `make`
 
 ## requirements
@@ -12,8 +14,12 @@ how to use a c/c++ shared library with in python using cffi
 
 ## building c backend
 
-`python main_builder.py` 
+`python main_builder.py`
+
+`python extended_builder.py`
 
 ## testing
 
 `python test.py`
+
+`python e_test.py`
