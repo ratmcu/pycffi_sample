@@ -5,9 +5,9 @@ CC = gcc  # C compiler
 CFLAGS = -fPIC -Wall -Wextra -O2 -g  # C flags
 LDFLAGS = -shared   # linking flags
 RM = rm -f   # rm command
-TARGET_LIB = libkernel.so  # target lib
+TARGET_LIB = libsample.so  # target lib
 
-SRCS = kernel.c  # source files
+SRCS = sample.c  # source files
 OBJS = $(SRCS:.c=.o)
 
 .PHONY: all

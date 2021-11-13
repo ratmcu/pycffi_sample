@@ -22,5 +22,5 @@ ffibuilder.set_source("_sample_cffi",
      libraries=['sample'],
      extra_link_args=['-Wl,-rpath=' + os.path.abspath('./')])   # library name, for the linker
 
-if __name__ == "__main__":
-    ffibuilder.compile(verbose=True)
+# if __name__ == "__main__":
+#     ffibuilder.compile(verbose=True)
