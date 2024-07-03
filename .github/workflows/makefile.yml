@@ -24,4 +24,4 @@ jobs:
       run: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./build/sample:./build/extended; python main_builder.py; python extend_build.py
 
     - name: Run Tests
-      run: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./build/sample:./build/extended; python test.py; python e_test.py
+      run: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./sample:./extended; python test.py; python e_test.py
