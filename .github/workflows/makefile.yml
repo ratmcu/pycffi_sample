@@ -21,7 +21,7 @@ jobs:
       run: make
 
     - name: build backend
-      run: python main_builder.py ; python extend_builder.py
+      run: python main_builder.py ; python extend_build.py
 
     - name: Run distcheck
       run: python test.py ; python e_test.py
