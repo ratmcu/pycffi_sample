@@ -1,0 +1,27 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: configure
+      run: cmake . ; python -m pip install cffi
+
+    - name: build
+      run: make
+
+    - name: build backend
+      run: python main_builder.py ; python extended_builder.py
+
+    - name: Run distcheck
+      run: python test.py ; python e_test.py
