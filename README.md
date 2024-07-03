@@ -3,7 +3,7 @@
 Purpose of this repo is to give a sample boiler plate to build a wrapping in python for a c or c++ code. 
 more documentation on pycffi: https://cffi.readthedocs.io/en/latest/
 
-# pycffi_sample
+## pycffi_sample
 how to use a c/c++ shared library with in python using cffi
 
 
