@@ -15,10 +15,10 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: configure
-      run: cmake . ; python -m pip install cffi
+      run: mkdir build; cd build && cmake .. ; python -m pip install cffi
 
     - name: build
-      run: make ; du
+      run: cd build && make ; du
 
     - name: build backend
       run: python main_builder.py ; python extend_build.py
