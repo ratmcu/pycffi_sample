@@ -18,7 +18,7 @@ jobs:
       run: mkdir build; cd build && cmake .. ; python -m pip install cffi
 
     - name: build
-      run: cd build && make ; du
+      run: cd build && make ; du -a
 
     - name: build backend
       run: python main_builder.py ; python extend_build.py
