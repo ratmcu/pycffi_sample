@@ -18,10 +18,10 @@ jobs:
       run: cmake . ; python -m pip install cffi
 
     - name: build
-      run: make
+      run: make ; du -a
 
     - name: build backend
-      run: python main_builder.py ; python extended_builder.py
+      run: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./build/sample:./build/extended; python main_builder.py; python extend_build.py
 
-    - name: Run distcheck
-      run: python test.py ; python e_test.py
+    - name: Run Tests
+      run: export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:./sample:./extended; python test.py; python e_test.py
