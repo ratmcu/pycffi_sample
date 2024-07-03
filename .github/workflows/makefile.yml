@@ -24,4 +24,4 @@ jobs:
       run: python main_builder.py ; python extend_build.py
 
     - name: Run distcheck
-      run: python test.py ; python e_test.py
+      run: du; python test.py ; python e_test.py
