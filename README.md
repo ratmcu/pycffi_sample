@@ -21,7 +21,7 @@ how to use a c/c++ shared library with in python using cffi
 
 `python main_builder.py`
 
-`python extended_builder.py`
+`python extend_build.py`
 
 ## testing
 
